@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business Card</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #e0e7ff, #f9fafb);
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      width: 450px;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 14px;
+      border: 5px solid #fb08aa;
+    }
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #111827;
+    }
+    .title {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+    .bio {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #374151;
+      margin-bottom: 18px;
+    }
+    .skills {
+      margin-bottom: 18px;
+    }
+    .skills span {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4f46e5;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin: 3px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 4px 6px;
+      padding: 8px 12px;
+      font-size: 13px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s;
+      background: #4f46e5;
+      color: #fff;
+    }
+    .links a:hover {
+      background: #3730a3;
+    }
+    footer {
+      margin-top: 16px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Replace with your photo -->
+    <img class="photo" src="anya.jpg" alt="Profile photo" />
+
+    <h1>Sonalika Thakur</h1>
+    <div class="title">software engineer</div>
+
+    <p class="bio">
+      I enjoy debugging code and solving logical challenges. Passionate about exploring different areas of software engineering to grow into a versatile developer.
+    </p>
+
+    <div class="skills">
+      
+      <span>C++</span>
+      <span>data structure and algorithm</span>
+      <span>SQL</span>
+    </div>
+
+    <div class="links">
+      <a href="mailto:sonalikathakur45@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/sonalika-thakur-7a52a6329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+    </div>
+
+    <footer>© <span id="year"></span> Sonalika Thakur</footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
