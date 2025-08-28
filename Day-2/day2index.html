@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business Card</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <img class="photo" src="anya.jpg" alt="Profile photo" />
+
+    <h1 class="name">Sonalika Thakur</h1>
+    <div class="title">Software Engineer</div>
+
+    <p class="bio">
+      I enjoy debugging code and solving logical challenges. Passionate about exploring different areas of software engineering to grow into a versatile developer.
+    </p>
+
+    <div class="skills">
+      <span>C++</span>
+      <span>Data Structures & Algorithms</span>
+      <span>SQL</span>
+    </div>
+
+    <div class="links">
+      <a href="mailto:sonalikathakur45@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/sonalika-thakur-7a52a6329" target="_blank">LinkedIn</a>
+    </div>
+
+    <footer>© <span id="year"></span> Sonalika Thakur</footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
